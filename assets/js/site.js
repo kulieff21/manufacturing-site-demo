@@ -11,6 +11,19 @@
     });
   }
 
+  const demoForms = document.querySelectorAll('[data-demo-form]');
+  demoForms.forEach((demoForm) => {
+    demoForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+      if (!demoForm.reportValidity()) return;
+      const status = demoForm.querySelector('[data-demo-status]');
+      if (status) {
+        status.classList.add('is-visible');
+        status.focus();
+      }
+    });
+  });
+
   const form = document.querySelector('[data-quote-form]');
   if (!form) return;
 

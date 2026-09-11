@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://kulieff21.github.io/manufacturing-site-demo/sitemap.xml
