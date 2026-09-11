@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="az" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>document.documentElement.classList.remove('no-js');</script>
+  <title>Metal kəsimi üçün dərhal qiymət hesabı | Kəsim</title>
+  <meta name="description" content="Polad, paslanmaz və alüminium detallar üçün ölçü, say və emal seçin; material istifadəsini, istehsal müddətini və ilkin qiyməti dərhal görün.">
+  <link rel="canonical" href="https://kulieff21.github.io/manufacturing-site-demo/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="az_AZ">
+  <meta property="og:title" content="Kəsim — metal emalı üçün açıq hesab">
+  <meta property="og:description" content="Detalın ölçüsünü və sayını yazın; material, fire, müddət və ilkin qiymət ekranda hesablansın.">
+  <meta property="og:url" content="https://kulieff21.github.io/manufacturing-site-demo/">
+  <meta property="og:site_name" content="Kəsim">
+  <meta name="theme-color" content="#155eef">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%23155eef'/%3E%3Cpath d='M14 13v38M14 32h13l18-19M27 32l19 19' fill='none' stroke='white' stroke-width='7' stroke-linecap='square'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://kulieff21.github.io/manufacturing-site-demo/#organization",
+        "name": "Kəsim Metal Emalı",
+        "url": "https://kulieff21.github.io/manufacturing-site-demo/",
+        "description": "Sumqayıtda lazer kəsim, büküm, qaynaq və toz boya xidməti göstərən kurgusal metal emalı müəssisəsi.",
+        "email": "istehsal@kesim.example",
+        "telephone": "+994 18 000 00 00",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Sumqayıt",
+          "addressCountry": "AZ"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://kulieff21.github.io/manufacturing-site-demo/#website",
+        "url": "https://kulieff21.github.io/manufacturing-site-demo/",
+        "name": "Kəsim",
+        "inLanguage": "az",
+        "publisher": {"@id": "https://kulieff21.github.io/manufacturing-site-demo/#organization"}
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Əsas məzmuna keç</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Kəsim ana səhifə">
+        <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><path d="M8 5v30M8 20h8L31 5M16 20l15 15"/></svg>
+        <span>Kəsim</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+        <span class="sr-only">Menyunu aç</span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="main-nav" aria-label="Əsas menyu">
+        <a href="imkanlar.html">İmkanlar</a>
+        <a href="materiallar.html">Materiallar</a>
+        <a href="keyfiyyet.html">Keyfiyyət</a>
+        <a href="haqqimizda.html">Haqqımızda</a>
+        <a href="elaqe.html">Əlaqə</a>
+        <a class="nav-cta" href="teklif.html">Təklif al</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="workbench" aria-labelledby="page-title">
+      <div class="workbench-head">
+        <div>
+          <p class="job-code">İlkin hesab / AZ-2609</p>
+          <h1 id="page-title">Çertyoj göndərməzdən əvvəl rəqəmi görün</h1>
+        </div>
+        <p class="workbench-intro">Düzbucaqlı detal üçün ölçünü, materialı və sayı daxil edin. Sistem sac istifadəsini, fire payını, istehsal müddətini və ilkin qiymət aralığını hesablayır.</p>
+      </div>
+
+      <div class="quote-bench">
+        <form class="quote-form" action="teklif.html" method="get" data-quote-form>
+          <fieldset>
+            <legend>Detalın spesifikasiyası</legend>
+            <div class="field span-2">
+              <label for="material">Material</label>
+              <select id="material" name="material">
+                <option value="steel" data-density="7.85" data-rate="2.15">Qara polad S235</option>
+                <option value="stainless" data-density="7.9" data-rate="4.8">Paslanmaz polad AISI 304</option>
+                <option value="aluminium" data-density="2.7" data-rate="5.1">Alüminium 5754</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="thickness">Qalınlıq</label>
+              <select id="thickness" name="thickness">
+                <option value="1">1 mm</option>
+                <option value="1.5">1,5 mm</option>
+                <option value="2" selected>2 mm</option>
+                <option value="3">3 mm</option>
+                <option value="4">4 mm</option>
+                <option value="5">5 mm</option>
+                <option value="6">6 mm</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="quantity">Ədəd</label>
+              <input id="quantity" name="quantity" type="number" min="1" max="500" step="1" value="24" inputmode="numeric">
+            </div>
+            <div class="field">
+              <label for="width">En</label>
+              <div class="input-unit"><input id="width" name="width" type="number" min="20" max="1450" step="1" value="320" inputmode="decimal"><span>mm</span></div>
+            </div>
+            <div class="field">
+              <label for="height">Uzunluq</label>
+              <div class="input-unit"><input id="height" name="height" type="number" min="20" max="2950" step="1" value="180" inputmode="decimal"><span>mm</span></div>
+            </div>
+          </fieldset>
+          <fieldset class="operations">
+            <legend>Sonrakı emal</legend>
+            <label><input type="checkbox" name="deburr" checked><span>Kənar təmizləmə</span><small>+0,45 ₼ / əd.</small></label>
+            <label><input type="checkbox" name="bend"><span>Bir büküm</span><small>+1,80 ₼ / əd.</small></label>
+            <label><input type="checkbox" name="coat"><span>Toz boya</span><small>+7,50 ₼ / m²</small></label>
+          </fieldset>
+          <p class="form-note">Hesab düzbucaqlı detal üçündür. Dəlik, kontur və qaynaq qiyməti DXF/PDF yoxlanışından sonra dəqiqləşir.</p>
+          <button class="primary-button" type="submit">Detallı təklif hazırla</button>
+        </form>
+
+        <div class="sheet-panel" aria-live="polite">
+          <div class="sheet-meta">
+            <div><span>Sac</span><strong>1500 × 3000 mm</strong></div>
+            <div><span>Yerləşmə</span><strong data-layout>7 × 15</strong></div>
+            <div><span>İstifadə</span><strong data-utilization>30,7%</strong></div>
+          </div>
+          <div class="sheet-wrap">
+            <svg class="sheet-map" viewBox="0 0 600 360" role="img" aria-labelledby="sheet-title sheet-desc">
+              <title id="sheet-title">Sac üzərində detal yerləşdirmə planı</title>
+              <desc id="sheet-desc">Seçilən ölçüdə detalların 1500 millimetrə 3000 millimetrlik sac üzərində yerləşməsi.</desc>
+              <defs><pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="currentColor" stroke-width="0.6"/></pattern></defs>
+              <rect class="sheet-grid" x="1" y="1" width="598" height="358" rx="2" fill="url(#grid)"/>
+              <g data-parts></g>
+              <path class="dimension-line" d="M1 350h598M12 343l-11 7 11 7M588 343l11 7-11 7"/>
+              <text class="dimension-text" x="300" y="342" text-anchor="middle">3000 mm</text>
+              <path class="dimension-line" d="M10 1v358M3 12l7-11 7 11M3 348l7 11 7-11"/>
+              <text class="dimension-text dimension-text-v" x="22" y="180" text-anchor="middle">1500 mm</text>
+            </svg>
+            <p class="diagram-caption"><span class="legend-used"></span>Detallar <span class="legend-offcut"></span>Qalan sac</p>
+          </div>
+          <dl class="quote-result">
+            <div><dt>Material çəkisi</dt><dd data-weight>21,7 kg</dd></div>
+            <div><dt>Fire payı</dt><dd data-waste>69,3%</dd></div>
+            <div><dt>Hazır olma</dt><dd data-lead>2 iş günü</dd></div>
+            <div class="result-price"><dt>İlkin qiymət</dt><dd data-price>76–91 ₼</dd></div>
+          </dl>
+          <p class="result-disclaimer">ƏDV xaric. Bu rəqəm sifariş deyil; istehsal faylı yoxlanandan sonra sabitlənir.</p>
+        </div>
+      </div>
+      <noscript><p class="noscript-note">Canlı hesab üçün JavaScript lazımdır. <a href="materiallar.html">Material və başlanğıc qiymət cədvəlinə baxın</a> və ya ölçünü e-poçtla göndərin.</p></noscript>
+    </section>
+
+    <section class="proof-strip" aria-label="Əsas istehsal göstəriciləri">
+      <dl>
+        <div><dt>Lazer masası</dt><dd>1500 × 3000 mm</dd></div>
+        <div><dt>Polad qalınlığı</dt><dd>0,8–16 mm</dd></div>
+        <div><dt>Ölçü toleransı</dt><dd>±0,20 mm-dən</dd></div>
+        <div><dt>Minimum sifariş</dt><dd>1 detal</dd></div>
+      </dl>
+    </section>
+
+    <section class="section capabilities" aria-labelledby="capabilities-title">
+      <div class="section-heading">
+        <h2 id="capabilities-title">Fayldan hazır detala qədər bir xətt</h2>
+        <p>Hər prosesin həddi əvvəlcədən yazılıb. Çertyoju göndərməzdən əvvəl hansı əməliyyatın uyğun olduğunu yoxlaya bilərsiniz.</p>
+        <a class="text-link" href="imkanlar.html">Bütün texniki imkanlar</a>
+      </div>
+      <div class="process-list">
+        <article>
+          <span class="process-code">LZR</span>
+          <div><h3>Lazer kəsim</h3><p>Polad 16 mm-dək, paslanmaz 8 mm-dək, alüminium 6 mm-dək.</p></div>
+          <strong>±0,20 mm</strong>
+        </article>
+        <article>
+          <span class="process-code">BKM</span>
+          <div><h3>CNC büküm</h3><p>2200 mm iş eni, 80 ton güc, bucaq nəzarəti ilə təkrar istehsal.</p></div>
+          <strong>±0,5°</strong>
+        </article>
+        <article>
+          <span class="process-code">QYN</span>
+          <div><h3>MIG / TIG qaynaq</h3><p>Polad, paslanmaz və alüminium üçün ayrıca iş sahələri.</p></div>
+          <strong>ISO 5817-C</strong>
+        </article>
+        <article>
+          <span class="process-code">BYA</span>
+          <div><h3>Toz boya</h3><p>RAL rəngləri, 60–100 μm örtük, 2,5 metrədək detal.</p></div>
+          <strong>48 saat</strong>
+        </article>
+      </div>
+    </section>
+
+    <section class="section production" aria-labelledby="production-title">
+      <div class="production-ledger">
+        <div class="section-heading section-heading-light">
+          <p class="job-code">Nümunə istehsal jurnalı</p>
+          <h2 id="production-title">Rəqəm yalnız qiymətdə deyil</h2>
+          <p>Vaxt, ölçü və material sərfi də təklifin içindədir. Aşağıdakı işlər kurgusal nümunələrdir; real müştəri məlumatı deyil.</p>
+        </div>
+        <div class="ledger-table-wrap" tabindex="0" role="region" aria-label="Nümunə istehsal işləri cədvəli">
+          <table class="ledger-table">
+            <thead><tr><th>İş</th><th>Material</th><th>Ədəd</th><th>Proses</th><th>Vaxt</th><th>Nəticə</th></tr></thead>
+            <tbody>
+              <tr><td>Korpus paneli</td><td>S235 · 2 mm</td><td>48</td><td>Lazer + 4 büküm</td><td>3 gün</td><td>48 / 48 qəbul</td></tr>
+              <tr><td>Mətbəx rəfi</td><td>AISI 304 · 1,5 mm</td><td>12</td><td>Lazer + TIG</td><td>4 gün</td><td>Ra 0,8 səth</td></tr>
+              <tr><td>Montaj kronşteyni</td><td>5754 · 3 mm</td><td>120</td><td>Lazer + 2 büküm</td><td>5 gün</td><td>±0,3 mm</td></tr>
+              <tr><td>Mühafizə qapağı</td><td>S235 · 1 mm</td><td>30</td><td>Lazer + boya</td><td>4 gün</td><td>RAL 5015</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section quality" aria-labelledby="quality-title">
+      <div class="quality-card">
+        <div class="gauge" aria-hidden="true"><span></span><span></span><span></span><span></span><i></i></div>
+        <div>
+          <h2 id="quality-title">Ölçülməyən detal hazır sayılmır</h2>
+          <p>İlk detal istehsalın başlanğıcında, son detal partiya bağlananda ölçülür. Protokolda nominal ölçü, faktiki nəticə, alət və nəzarət edən şəxs görünür.</p>
+          <a class="secondary-button" href="keyfiyyet.html">Nümunə ölçü protokolu</a>
+        </div>
+        <dl class="quality-values">
+          <div><dt>Nominal</dt><dd>320,00 mm</dd></div>
+          <div><dt>Faktiki</dt><dd>320,08 mm</dd></div>
+          <div><dt>Fərq</dt><dd>+0,08 mm</dd></div>
+          <div><dt>Status</dt><dd class="pass">Qəbul</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section final-cta">
+      <div>
+        <h2>DXF hazırdırsa, cavab üçün bir iş günü gözləməyin</h2>
+        <p>Faylı və sayı göndərin. İş saatlarında ilkin texniki cavab 30 dəqiqə içində verilir.</p>
+      </div>
+      <a class="primary-button" href="teklif.html">Təklif sorğusu aç</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div><a class="brand brand-footer" href="index.html"><svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><path d="M8 5v30M8 20h8L31 5M16 20l15 15"/></svg><span>Kəsim</span></a><p>Sumqayıtda kurgusal metal emalı müəssisəsi.</p></div>
+      <div><h2>İstehsal</h2><a href="imkanlar.html">İmkanlar</a><a href="materiallar.html">Materiallar</a><a href="keyfiyyet.html">Keyfiyyət</a></div>
+      <div><h2>Şirkət</h2><a href="haqqimizda.html">Haqqımızda</a><a href="elaqe.html">Əlaqə</a><a href="mexfilik.html">Məxfilik</a></div>
+      <div><h2>Əlaqə</h2><a href="tel:+994180000000">+994 18 000 00 00</a><a href="mailto:istehsal@kesim.example">istehsal@kesim.example</a><span>B.e.–Ş. 08:00–18:00</span></div>
+    </div>
+    <div class="footer-note"><p>Bu sayt portfolio üçün hazırlanmış demodur. Kəsim real şirkət deyil; forma məlumat göndərmir.</p><p>© 2026 Kəsim</p></div>
+  </footer>
+  <script src="assets/js/site.js" defer></script>
+</body>
+</html>
