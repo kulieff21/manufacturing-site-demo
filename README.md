@@ -111,7 +111,7 @@ python tools/audit_selftest.py
 - **System drafting typography.** Bahnschrift/DIN-style condensed headings make
   the page read like an engineering work surface; plain system sans keeps forms
   and tables practical. There is no font download.
-- **Project-owned photography.** Two original industrial images were generated for
+- **Project-owned photography.** Two original industrial images were created for
   this fictional brand and optimized locally; there is no stock-photo hotlink or
   third-party image request at runtime.
 - **Motion follows intent.** One orchestrated hero entrance, pointer-positioned
