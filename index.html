@@ -13,8 +13,8 @@
   <meta property="og:description" content="Detalın ölçüsünü və sayını yazın; material, fire, müddət və ilkin qiymət ekranda hesablansın.">
   <meta property="og:url" content="https://kulieff21.github.io/manufacturing-site-demo/">
   <meta property="og:site_name" content="Kəsim">
-  <meta name="theme-color" content="#155eef">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%23155eef'/%3E%3Cpath d='M14 13v38M14 32h13l18-19M27 32l19 19' fill='none' stroke='white' stroke-width='7' stroke-linecap='square'/%3E%3C/svg%3E">
+  <meta name="theme-color" content="#0a0d16">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
   <link rel="stylesheet" href="assets/css/style.css">
   <script type="application/ld+json">
   {
@@ -51,8 +51,8 @@
   <header class="site-header">
     <div class="header-inner">
       <a class="brand" href="index.html" aria-label="Kəsim ana səhifə">
-        <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><path d="M8 5v30M8 20h8L31 5M16 20l15 15"/></svg>
-        <span>Kəsim</span>
+        <img class="brand-mark" src="assets/img/brand-mark.svg" alt="" aria-hidden="true" width="40" height="40">
+        <span class="brand-copy"><strong>Kəsim</strong><small>metal emalı</small></span>
       </a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
         <span class="sr-only">Menyunu aç</span><span></span><span></span>
@@ -70,12 +70,29 @@
 
   <main id="main">
     <section class="workbench" aria-labelledby="page-title">
-      <div class="workbench-head">
-        <div>
-          <p class="job-code">İlkin hesab / AZ-2609</p>
-          <h1 id="page-title">Çertyoj göndərməzdən əvvəl rəqəmi görün</h1>
+      <div class="hero-stage">
+        <div class="hero-media" aria-hidden="true">
+          <img src="assets/img/laser-floor-v1.jpg" alt="" aria-hidden="true" width="1942" height="817" fetchpriority="high">
         </div>
-        <p class="workbench-intro">Düzbucaqlı detal üçün ölçünü, materialı və sayı daxil edin. Sistem sac istifadəsini, fire payını, istehsal müddətini və ilkin qiymət aralığını hesablayır.</p>
+        <div class="hero-copy">
+          <p class="hero-label"><span>Sumqayıt</span> dəqiq metal emalı</p>
+          <h1 id="page-title">Çertyojdan hazır detala, bir istehsal axınında</h1>
+          <p>Ölçünü daxil edin, sac yerləşməsini görün və istehsala keçməzdən əvvəl real qiymət aralığını hesablayın.</p>
+          <div class="hero-actions">
+            <a class="primary-button magnetic" href="#canli-hesab">Canlı hesabı aç</a>
+            <a class="hero-link" href="imkanlar.html">Emal imkanlarına bax</a>
+          </div>
+        </div>
+        <dl class="hero-stats" aria-label="İstehsal göstəriciləri">
+          <div><dt>Lazer masası</dt><dd>3 × 1,5 m</dd></div>
+          <div><dt>Dəqiqlik</dt><dd>±0,20 mm</dd></div>
+          <div><dt>İlkin cavab</dt><dd>30 dəq.</dd></div>
+        </dl>
+      </div>
+
+      <div class="quote-intro" id="canli-hesab">
+        <div><span class="section-index">Qiymət simulyatoru</span><h2>Detalın ölçüsünü yazın. Sacı biz yerləşdirək.</h2></div>
+        <p>Düzbucaqlı detal üçün material, fire, müddət və ilkin qiymət brauzerinizdə hesablanır. Heç bir məlumat göndərilmir.</p>
       </div>
 
       <div class="quote-bench">
@@ -172,6 +189,16 @@
         <p>Hər prosesin həddi əvvəlcədən yazılıb. Çertyoju göndərməzdən əvvəl hansı əməliyyatın uyğun olduğunu yoxlaya bilərsiniz.</p>
         <a class="text-link" href="imkanlar.html">Bütün texniki imkanlar</a>
       </div>
+      <div class="process-gallery">
+        <a class="gallery-card gallery-card-wide tilt-card" href="lazer-kesim.html">
+          <img src="assets/img/laser-floor-v1.jpg" alt="Fiber lazer başlığı polad sacı kəsir" width="1942" height="817" loading="lazy">
+          <span><small>Fiber lazer</small><strong>Kəsim anında istilik yalnız konturdadır</strong></span>
+        </a>
+        <a class="gallery-card tilt-card" href="keyfiyyet.html">
+          <img src="assets/img/quality-control-v1.jpg" alt="Metal detal ştangen-pərgarla ölçülür" width="1536" height="1024" loading="lazy">
+          <span><small>Son nəzarət</small><strong>Ölçü protokolu detal ilə birlikdə bağlanır</strong></span>
+        </a>
+      </div>
       <div class="process-list">
         <article>
           <span class="process-code">LZR</span>
@@ -219,7 +246,7 @@
 
     <section class="section quality" aria-labelledby="quality-title">
       <div class="quality-card">
-        <div class="gauge" aria-hidden="true"><span></span><span></span><span></span><span></span><i></i></div>
+        <div class="quality-photo"><img src="assets/img/quality-control-v1.jpg" alt="Texnik hazır metal detalın dəliyini ştangen-pərgarla ölçür" width="1536" height="1024" loading="lazy"><div class="gauge" aria-hidden="true"><span></span><span></span><span></span><span></span><i></i></div></div>
         <div>
           <h2 id="quality-title">Ölçülməyən detal hazır sayılmır</h2>
           <p>İlk detal istehsalın başlanğıcında, son detal partiya bağlananda ölçülür. Protokolda nominal ölçü, faktiki nəticə, alət və nəzarət edən şəxs görünür.</p>
@@ -245,7 +272,7 @@
 
   <footer class="site-footer">
     <div class="footer-main">
-      <div><a class="brand brand-footer" href="index.html"><svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><path d="M8 5v30M8 20h8L31 5M16 20l15 15"/></svg><span>Kəsim</span></a><p>Sumqayıtda xəyali metal emalı müəssisəsi.</p></div>
+      <div><a class="brand brand-footer" href="index.html"><img class="brand-mark" src="assets/img/brand-mark.svg" alt="" aria-hidden="true" width="40" height="40"><span class="brand-copy"><strong>Kəsim</strong><small>metal emalı</small></span></a><p>Sumqayıtda xəyali metal emalı müəssisəsi.</p></div>
       <div><h2>İstehsal</h2><a href="imkanlar.html">İmkanlar</a><a href="materiallar.html">Materiallar</a><a href="keyfiyyet.html">Keyfiyyət</a></div>
       <div><h2>Şirkət</h2><a href="haqqimizda.html">Haqqımızda</a><a href="elaqe.html">Əlaqə</a><a href="mexfilik.html">Məxfilik</a></div>
       <div><h2>Əlaqə</h2><a href="tel:+994180000000">+994 18 000 00 00</a><a href="mailto:istehsal@kesim.example">istehsal@kesim.example</a><span>B.e.–Ş. 08:00–18:00</span></div>

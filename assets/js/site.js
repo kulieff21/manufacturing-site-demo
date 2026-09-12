@@ -1,6 +1,35 @@
 (() => {
   'use strict';
 
+  requestAnimationFrame(() => document.documentElement.classList.add('is-ready'));
+
+  const motionAllowed = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (motionAllowed) {
+    document.querySelectorAll('.tilt-card').forEach((card) => {
+      card.addEventListener('pointermove', (event) => {
+        const bounds = card.getBoundingClientRect();
+        const x = (event.clientX - bounds.left) / bounds.width;
+        const y = (event.clientY - bounds.top) / bounds.height;
+        card.style.setProperty('--x', `${Math.round(x * 100)}%`);
+        card.style.setProperty('--y', `${Math.round(y * 100)}%`);
+        card.style.transform = `perspective(900px) rotateX(${(0.5 - y) * 3}deg) rotateY(${(x - 0.5) * 3}deg) translateY(-4px)`;
+      });
+      card.addEventListener('pointerleave', () => {
+        card.style.removeProperty('transform');
+      });
+    });
+
+    document.querySelectorAll('.magnetic').forEach((button) => {
+      button.addEventListener('pointermove', (event) => {
+        const bounds = button.getBoundingClientRect();
+        const x = (event.clientX - bounds.left - bounds.width / 2) * .1;
+        const y = (event.clientY - bounds.top - bounds.height / 2) * .12;
+        button.style.transform = `translate(${x}px, ${y - 3}px)`;
+      });
+      button.addEventListener('pointerleave', () => button.style.removeProperty('transform'));
+    });
+  }
+
   const menuButton = document.querySelector('.menu-toggle');
   const nav = document.querySelector('.main-nav');
   if (menuButton && nav) {
