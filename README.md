@@ -28,8 +28,9 @@ needs before sending a drawing: supported material and thickness, bed size,
 tolerance, minimum order, lead time and even an indicative price. The result is a
 long email exchange before either side knows whether the part is a fit.
 
-Kəsim starts with the opposite assumption. The first screen is a working quote
-bench, not a gallery or a slogan. Enter a rectangular part's material, thickness,
+Kəsim starts with the opposite assumption. A photo-led production scene establishes
+the workshop, and the working quote bench sits directly beneath it instead of being
+buried behind a generic contact CTA. Enter a rectangular part's material, thickness,
 dimensions, quantity and follow-up operations; the page immediately publishes:
 
 - the best row-and-column layout on a 1500 × 3000 mm sheet;
@@ -51,9 +52,10 @@ offcut, weight and price results — the diagram cannot disagree with the number
 beside it.
 
 This creates a manufacturing-shaped page rather than a generic corporate site
-with different copy. Its structure borrows from a job traveller: job code,
-specification fields, process abbreviations, dimensional marks and an inspection
-ledger. Decoration that does not explain work was left out.
+with different copy. Its structure borrows from a job traveller: specification
+fields, process abbreviations, dimensional marks and an inspection ledger. The
+photo rail, animated nesting map and pointer-reactive process cards show the work
+at three scales: factory, machine and finished part.
 
 ## What is included
 
@@ -109,9 +111,12 @@ python tools/audit_selftest.py
 - **System drafting typography.** Bahnschrift/DIN-style condensed headings make
   the page read like an engineering work surface; plain system sans keeps forms
   and tables practical. There is no font download.
-- **No borrowed factory photography.** The page is carried by the working nesting
-  diagram, production tables and inspection data. It avoids generic sparks-and-
-  welder stock imagery that would belong to no specific workshop.
+- **Project-owned photography.** Two original industrial images were generated for
+  this fictional brand and optimized locally; there is no stock-photo hotlink or
+  third-party image request at runtime.
+- **Motion follows intent.** One orchestrated hero entrance, pointer-positioned
+  gallery light, restrained card depth and responsive button feedback add energy;
+  `prefers-reduced-motion` removes the non-essential movement.
 - **Fiction stays labelled.** Zeroed phone numbers, a reserved `.example` email,
   explicit demo notices and no invented clients, certificates or awards.
 
