@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Kəsim işarəsi</title>
+  <path fill="#675cf5" d="M8 8h48v48H8z"/>
+  <path fill="#0a0d16" d="M20 17h8v30h-8zM28 28h8l10-11h-9.8L28 26.1zm0 8h8.2L46 47H36.2L28 37.8z"/>
+  <path fill="#ff8a4c" d="M48 8h8v8h-8z"/>
+</svg>
