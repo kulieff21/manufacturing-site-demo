@@ -4,7 +4,7 @@ A static site for a fictional Azerbaijani sheet-metal manufacturer, built as a
 portfolio piece and sales demo. The company, address, production records and
 prices are fictional; the forms send and store nothing, and the site says so.
 
-**Live:** https://kulieff21.github.io/manufacturing-site-demo/
+**Live:** https://twenion.github.io/manufacturing-site-demo/
 
 13 pages · live quote calculator · sheet-nesting diagram · no framework · no
 runtime build · no CDN · no cookies
@@ -16,9 +16,9 @@ but each has a different commercial argument and page shape.
 
 | Demo | Business | Product shape |
 | --- | --- | --- |
-| [`cargo-site-demo`](https://github.com/kulieff21/cargo-site-demo) | Courier | Tracking, tariffs and an order form |
-| [`ecommerce-site-demo`](https://github.com/kulieff21/ecommerce-site-demo) | Skincare retail | A 24-product catalogue and cart |
-| [`hotel-site-demo`](https://github.com/kulieff21/hotel-site-demo) | Guesthouse | 365 visible nightly prices and booking |
+| [`cargo-site-demo`](https://github.com/twenion/cargo-site-demo) | Courier | Tracking, tariffs and an order form |
+| [`ecommerce-site-demo`](https://github.com/twenion/ecommerce-site-demo) | Skincare retail | A 24-product catalogue and cart |
+| [`hotel-site-demo`](https://github.com/twenion/hotel-site-demo) | Guesthouse | 365 visible nightly prices and booking |
 | `manufacturing-site-demo` **← you are here** | Metal fabrication | A specification bench and measurable quote |
 
 ## The commercial argument

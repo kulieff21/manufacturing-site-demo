@@ -9,7 +9,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parent.parent
-BASE = "https://kulieff21.github.io/manufacturing-site-demo/"
+BASE = "https://twenion.github.io/manufacturing-site-demo/"
 
 
 NAV = (
